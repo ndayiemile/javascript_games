@@ -1,0 +1,30 @@
+.square{
+    width:200px;
+    height:200px;
+    border-style: solid;
+    border-color: black;
+}
+.grid{
+    display:flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width:618px;
+    height: 618px;
+}
+.mole{
+    background-image: url('images/mole.png');
+}
+#header{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 618px;
+    background-color: aqua;
+    margin-bottom: 2vh;
+    margin-top: 0px;
+}
+.score,.time-left{
+    display: flex;
+    flex-flow: row;
+    margin-right: 20px;
+    margin:0px auto;
+}

@@ -1,0 +1,40 @@
+html,body{
+    padding: 0;
+    margin:0 auto;
+}
+#play-board{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    border: black 2px solid;
+    display: grid;
+    grid-template: repeat(10,1fr)/ 1fr;
+}
+.play-column{
+    display: grid;
+    grid-template: 1fr / repeat(10,1fr);
+}
+.play-column:nth-child(even) div:nth-child(even),.play-column:nth-child(odd) div:nth-child(odd){
+    background-image: url("cards/default.png");
+    background-size: 100% 100%;
+}
+.player-one-block{
+    background-image: url("cards/playCard_1.png") !important;
+    background-size: 100% 100%;
+}
+.player-two-block{
+    background-image: url("cards/playCard_2.png") !important;
+    background-size: 100% 100%;
+}
+.player-two-king{
+    background-image: url("cards/playCard_2_dame.png") !important;
+    background-size: 100% 100%;
+}
+.player-one-king{
+    background-image: url("cards/playCard_1_dame.png") !important;
+    background-size: 100% 100%;
+}
+.clicked-block{
+    opacity: 0.85;
+}

@@ -1,0 +1,28 @@
+html,body{
+    padding: 0;
+    margin:0 auto;
+}
+#play-board{
+    width: 600px;
+    height: 600px;
+    background-color: blanchedalmond;
+    border: black 2px solid;
+    display: grid;
+    grid-template: repeat(10,1fr)/ 1fr;
+}
+.play-column{
+    display: grid;
+    grid-template: 1fr / repeat(10,1fr);
+}
+.play-column:nth-child(even) div:nth-child(even),.play-column:nth-child(odd) div:nth-child(odd){
+    background-color: brown;
+}
+.player-one-block{
+    background-color: green !important;
+}
+.player-two-block{
+    background-color: rgb(161, 137, 1) !important;
+}
+.clicked-block{
+    opacity: 0.5;
+}
